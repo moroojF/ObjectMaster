@@ -9,6 +9,10 @@ public class Human {
 		this.health=100;
 	}
 	
+	public Human(int health ) {
+		this.health=health;
+	}
+	
 	public int getStrength() {
 		return strength;
 	}
@@ -42,7 +46,7 @@ public class Human {
 	}
 
 	public static void attack(Human human ) {
-		human.health=human.health-human.strength;
+		human.health-=human.strength;
 		
 	}
 
